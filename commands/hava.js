@@ -18,7 +18,7 @@ module.exports = {
                 var current = result[0].current;
                 var location = result[0].location;
 
-                await bot.sendText(message.from, `${current.observationpoint} için hava tahmini/nSaat dilimi: UTC${location.timezone}/nDerece Tipi: Celcius/nSıcaklık: ${current.temperature}°/nRüzgar: current.winddisplay/nHissi: ${current.feelslike}°/nNem: ${current.humidity}%`)
+                await bot.sendText(message.from, `${current.observationpoint} için hava tahmini\nSaat dilimi: UTC${location.timezone}\nDerece Tipi: Celcius\nSıcaklık: ${current.temperature}°\nRüzgar: ${current.winddisplay}\nHissi: ${current.feelslike}°\nNem: ${current.humidity}%`)
 
             })
         } catch {
